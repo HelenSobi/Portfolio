@@ -1,9 +1,11 @@
 import { useNavigate } from "react-router-dom";
+import NavBar from '../components/NavbBar';
 
 const Projects = () => {
     const navigate = useNavigate();
     return (
         <>
+        <NavBar/>
             <div className="container">
             <div className="title">
                 <h1>Project page !!!</h1>

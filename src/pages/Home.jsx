@@ -1,10 +1,14 @@
+import NavBar from '../components/NavbBar';
 import Hero from "../components/Hero";
+
 const Home = () => {
     return (
         <>
-       <Hero/>
+        <NavBar/>
+        <Hero/>
+        <div>
+            Tesing
+        </div>
         </>
-    )
-}
-
+    )}
 export default Home;
