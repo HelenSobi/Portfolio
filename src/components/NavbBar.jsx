@@ -1,5 +1,6 @@
-import {NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {useState, useEffect} from 'react';
+
 const NavBar = () =>{
     const [isOpen, setIsOpen]=useState(false)
     const [color, setColor]=useState(false);
@@ -15,14 +16,18 @@ const NavBar = () =>{
         window.addEventListener("scroll", changeColor);
         return () => {
             window.removeEventListener("scroll", changeColor);
+            
         }
     }, []);
  
     return (
         <> 
-        <nav className={`header-container ${color ? " header-bg-scroll" : "header-bg-noscroll"}`}>
+        <nav className={`header-container ${color ? "header-bg-scroll" : "header-bg-noscroll"}`}>
                         <div>
-                        <NavLink to="/" className="text-2xl font-bold text-white w-100 h-10 mr-2">Portfolio.</NavLink>
+                        <Link to="/" className="text-2xl font-bold text-white mr-2">
+                        Portfolio.
+                        {/* <img src="../src/assets/logo.png" className=" w-100 h-10 " alt="logo"/> */}
+                        </Link>
                         </div>
                         <div className="block lg:hidden">
                         <button
@@ -45,10 +50,12 @@ const NavBar = () =>{
                         <div
                         className={`w-full block lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}>
                         <div className="text-sm lg:flex-grow">
-                        <NavLink to="/" className="block mt-4 lg:inline-block lg:mt-0 text-white font-bold text-lg mr-4">Home</NavLink>
-                        <NavLink to="/about" className="block mt-4 lg:inline-block lg:mt-0 text-white font-bold text-lg  mr-4">About</NavLink>
-                        <NavLink to="/projects" className="block mt-4 lg:inline-block lg:mt-0 text-white font-bold text-lg  mr-4">Projects</NavLink>
-                        <NavLink to="/contact" className="block mt-4 lg:inline-block lg:mt-0 text-white font-bold text-lg  mr-4" >Contact</NavLink>   
+                        <Link  onClick={() => setIsOpen(!isOpen)} to="/" className="block mt-4 lg:mr-14 lg:inline-block lg:mt-0 text-white font-bold text-lg mr-4">Home</Link>
+                        <Link  onClick={() => setIsOpen(!isOpen)} to="/projects" className="block mt-4 lg:mr-14 lg:inline-block lg:mt-0 text-white font-bold text-lg  mr-4">Projects</Link>
+        
+                        <Link  onClick={() => setIsOpen(!isOpen)} to="/about" className="block mt-4 lg:mr-14 lg:inline-block lg:mt-0 text-white font-bold text-lg  mr-4">About</Link>
+                        
+                        <Link  onClick={() => setIsOpen(!isOpen)} to="/contact" className="block mt-4 lg:inline-block lg:mt-0 text-white font-bold text-lg  mr-4" >Contact</Link>   
                         </div> 
                         </div> 
         </nav>

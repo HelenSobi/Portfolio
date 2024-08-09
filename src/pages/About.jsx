@@ -1,10 +1,9 @@
-import NavBar from '../components/NavbBar';
-import Hero from "../components/Hero";
+import HeroImage from "../components/HeroImage";
+
 const About = () =>{
     return (
         <>
-        <NavBar/>
-        <Hero/>
+        <HeroImage heading="It's me." subHead="Wanna know some facts about me."/>
         <h1>About Me Page !!!</h1>
         </>
     )

@@ -19,28 +19,31 @@
   background-color: rgba(26, 26, 26, 0.4);
 }
 /* Header Ends */
-/* Hero begins*/
-.hero-container{
-  position: relative;
-  height: 200px;
-}
-.hero-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  filter:blur(5px);
-  -webkit-filter: blur(8px);
- max-height:100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+/* Hero begins*/
+.hero-transparent{
+  background: rgba(0, 0, 0, 0.5);
 }
 /* Hero Ends*/
+
+/* Hero Image Begins */
+.hero-img{
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  height: 80vh;
+  position: relative;
+}
+.hero-img::before{
+content: "";
+background: url("https://images.unsplash.com/photo-1550063873-ab792950096b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+background-size: cover;
+background-position: center top;
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+/* Hero Image Ends*/
 
