@@ -10,13 +10,14 @@ const Hero = () =>{
           </div>
           
           <div className="relative z-10 flex flex-col justify-center items-center h-full text-center hero-transparent">
-            <h1 className="text-5xl font-thin leading-tight mb-4">HELLO! I'M HELEN SOBIA</h1>
-            {/* <p className="text-2xl text-gray-300 mb-8">React Developer</p> */}
-            <p className="text-lg text-gray-300">
+            <h1 className="text-xl font-thin leading-tight mb-4 text-[#FFDA76]">Hello, I'm</h1>
+            <h1 className="text-2xl md:text-7xl font-thin leading-tight mb-4">HELEN SOBIA</h1>
+            <p className="text-xl md:text-2xl text-gray-300 mb-8">React Front-end Developer</p>
+            {/* <p className="text-lg text-gray-300">
               A Frontend focused Web Developer building the Frontend of websites and </p>
               <p className="text-lg text-gray-300">
               Web Applications that leads to the success of the overall product
-            </p>
+            </p> */}
             <Link to="/projects" className="btn my-5">projects</Link>
            
           </div>

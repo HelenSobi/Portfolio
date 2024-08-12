@@ -26,9 +26,9 @@ body, html {
   padding: 12px 32px;
   font-size: 1rem;
   text-transform: uppercase;
-  background: rgba(248, 221, 15, 0.955);
+  background:#FFDA76;
   color: #222;
-  border: 2px solid #fff;
+  /* border: 2px solid #fff; */
   font-weight: 600;
   cursor: pointer;
   border-radius: 5px;
