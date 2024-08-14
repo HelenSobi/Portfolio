@@ -1,6 +1,9 @@
 # Getting Started with  React + Vite
 
-This is a React project bootstrapped with Vite and structured/developed by Helen Sobia.
+### `Page Not Found` error while refreshing a page
 
-Available Scripts
+create `file _redirects`
+add 
+`/* /index.html 200`
+File should be in folder `public`
 

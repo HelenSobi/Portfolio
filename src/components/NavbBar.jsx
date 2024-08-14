@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom';
 import {useState, useEffect} from 'react';
+import { FaHospitalSymbol} from 'react-icons/fa';
 
 const NavBar = () =>{
     const [isOpen, setIsOpen]=useState(false)
@@ -26,9 +27,9 @@ const NavBar = () =>{
             <div className={`flex flex-wrap justify-between p-4 bg-zinc-900 ${color ? "md:bg-opacity-90" : "md:bg-opacity-10"}`}>
             {/* <div className={`header-container ${color ? "header-bg-scroll" : "header-bg-noscroll"}`}> */}
                     <div>
-                        <Link to="/" className="text-2xl font-bold text-white mr-2">
-                        Portfolio.
-                        {/* <img src="../src/assets/logo.png" className=" w-100 h-10 " alt="logo"/> */}
+                        <Link to="/">
+                        <FaHospitalSymbol size={40} style={{color:"#FFDA76"}}/>
+                      
                         </Link>
                     </div>
                     <div className="block md:hidden">
