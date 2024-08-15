@@ -3,15 +3,24 @@ import ToDo from "../assets/images/ToDo.png";
 import Restaurant from "../assets/images/Restaurant.png";
 import Weather from "../assets/images/Weather.png";
 import Caterar from "../assets/images/Caterar.png";
+import simon from "../assets/images/simon-game.png";
 
 const ProjectCardData = [
     {
-        imgsrc : Restaurant,
-        title : "Food Delivery",
-        text : "Simple , responsive Website for Restaurants, created with React.js, Tailwind CSS, Javascript, HTML. It lists Top Restaurants and its menus using Live API.",
-        view : "https://food-delivery-live-api.netlify.app/",
-        code :"https://github.com/HelenSobi/Restaurant-App"
+        imgsrc: simon,
+        title: "Simon-Game",
+        text: "A ReactJS game that tests memory by requiring users to repeat increasingly complex sequences of tones and lights.",
+        view: "https://simon-game-react.netlify.app/",
+        code: "https://github.com/HelenSobi/simon-game"
     },
+    {
+        imgsrc : Caterar,
+        title : "Caterar",
+        text : "Caterar is a platform that allows users to orders for parties and events. Caterar has a community of culinary experts to help make your carving spectacular.",
+        view : "https://caterar.netlify.app/",
+        code :"https://github.com/HelenSobi/caterar"
+    },
+
     {
         imgsrc : Weather,
         title : "Weather Forecast",
@@ -20,11 +29,11 @@ const ProjectCardData = [
         code :"https://github.com/HelenSobi/WeatherForecastApp-React"
     },
     {
-        imgsrc : Caterar,
-        title : "Caterar",
-        text : "Caterar is a platform that allows users to orders for parties and events. Caterar has a community of culinary experts to help make your carving spectacular.",
-        view : "https://caterar.netlify.app/",
-        code :"https://github.com/HelenSobi/caterar"
+        imgsrc : Restaurant,
+        title : "Food Delivery",
+        text : "Simple , responsive Website for Restaurants, created with React.js, Tailwind CSS, Javascript, HTML. It lists Top Restaurants and its menus using Live API.",
+        view : "https://food-delivery-live-api.netlify.app/",
+        code :"https://github.com/HelenSobi/Restaurant-App"
     },
     {
         imgsrc : ToDo,
