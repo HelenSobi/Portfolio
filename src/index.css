@@ -1,10 +1,10 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;500;600;700&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
-  font-family: 'Signika Negative', sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.5;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,34 +21,3 @@ body, html {
     list-style: none;
     box-sizing:border-box;
 }
-/* Common Styles */
-.btn{
-  padding: 12px 32px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  background:#FFDA76;
-  color: #222;
-  /* border: 2px solid #fff; */
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-}
-.btn-light{
-  background: transparent;
-  color: #fff;
-}
-.btn:hover{
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  transition: 0.3s;  
-}
-/* body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-} */
-
-

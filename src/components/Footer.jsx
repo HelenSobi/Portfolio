@@ -1,33 +1,29 @@
-import {FaHome, FaMailBulk } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import SocialLinks from "./SocialLinks";
+import FooterContact from "./FooterContact";
 
 const Footer=() =>{
-    const year=new Date().getFullYear();
     return (
         <>
-        <footer className="bg-zinc-900">
+        <footer className=" bg-slate-950">
         <div className="flex justify-between flex-col md:flex-row items-center p-4">
-            <div className="self-start mb-4 md:mb-0">
-            <div className='flex'>
-                <FaHome size={20} style={{color:"white", marginRight:"1rem"}}/>
-           <div>
-            <p className="text-white">Dubai, UAE.</p>
-            </div>
-         </div>
-         <div className='flex'>
-         <FaMailBulk size={20} style={{color:"white", marginRight:"1rem"}}/>
-         <p className='text-white font-bold text-xl'>
-           helensobia88@gmail.com</p>
-         </div>
-            </div>
-            <div className="self-stretch">
-            <h4 className="text-white font-bold text-xl"> About me</h4>
-            <p className="text-white  font-medium md:font-semibold ">This is Helen Sobia. </p>
-            <p className="text-white text-sm">I enjoy playing with code and design new challenges <br></br>to make them in my own way.</p>
+        <div className="w-full md:w-6/12 mb-4 md:mb-0">
             <SocialLinks/>
+            <FooterContact/>
+        </div>
+            <div className="w-full md:w-6/12">
+            <p className="text-zinc-500 text-sm">Loosely designed in 
+            <Link to="https://www.figma.com/" target="_blank" className="text-zinc-300"> Figma</Link> and coded in 
+            <Link to="https://code.visualstudio.com" target="_blank" className="text-zinc-300"> Visual Studio Code</Link> by yours truly. 
+                Built with 
+                <Link to="https://react.dev/" target="_blank" className="text-zinc-300"> React.js</Link> and 
+                <Link to="https://tailwindcss.com/" target="_blank" className="text-zinc-300"> Tailwind CSS</Link>, deployed with 
+                <Link to="https://www.netlify.com/" target="_blank" className="text-zinc-300"> Netlify</Link>. All text is set in the 
+                <Link to="https://rsms.me/inter/" target="_blank" className="text-zinc-300"> Inter</Link> typeface.</p>
+            
             </div>
         </div>
-        <p className="text-gray-700 text-center">{year} &copy;Designed by Helen Sobia</p>
+        <p className="text-gray-700 text-center">{new Date().getFullYear()} &copy;Designed by Helen Sobia</p>
 
         </footer>
         

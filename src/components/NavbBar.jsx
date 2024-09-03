@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {useState, useEffect} from 'react';
 import { FaHospitalSymbol} from 'react-icons/fa';
 
@@ -24,13 +24,9 @@ const NavBar = () =>{
     return (
         <> 
         <nav className="fixed top-0 right-0 left-0 z-50 bg-transparent w-full">
-            <div className={`flex flex-wrap justify-between p-4 bg-zinc-900 ${color ? "md:bg-opacity-90" : "md:bg-opacity-10"}`}>
-            {/* <div className={`header-container ${color ? "header-bg-scroll" : "header-bg-noscroll"}`}> */}
+            <div className={`flex flex-wrap justify-between p-4 bg-slate-950 ${color ? "md:bg-opacity-90" : "md:bg-opacity-10"}`}>
                     <div>
-                        <Link to="/">
-                        <FaHospitalSymbol size={40} style={{color:"#FFDA76"}}/>
-                      
-                        </Link>
+                        <Link to="/"><FaHospitalSymbol size={40} style={{color:"#5eead4"}}/></Link>
                     </div>
                     <div className="block md:hidden">
                         <button
@@ -51,20 +47,17 @@ const NavBar = () =>{
                         </button>
                     </div>
                     <div
-                        className={`w-full max-md:h-screen flex flex-col justify-center md:block md:flex-row items-center md:w-auto ${isOpen ? "block" : "hidden"}`}>
-                        {/* <div className="md:flex-grow"> */}
-                            <Link  onClick={() => setIsOpen(!isOpen)} to="/" className="p-4 text-2xl text-white mt-4 md:p-0 md:mr-14 md:inline-block md:mt-0 md:text-lg hover:text-[#FFDA76]">Home</Link>
-                            <Link  onClick={() => setIsOpen(!isOpen)} to="/projects" className="p-4 text-2xl text-white mt-4 md:p-0 md:mr-14 md:inline-block md:mt-0 md:text-lg hover:text-[#FFDA76]">Projects</Link>
+                        className={`w-full max-md:h-screen flex flex-col justify-center md:block md:flex-row items-center md:w-auto text-2xl font-semibold text-white md:text-lg ${isOpen ? "block" : "hidden"}`}>
+                        
+                            <Link  onClick={() => setIsOpen(!isOpen)} to="/" className="p-4 mt-4 md:p-0 md:mr-14 md:inline-block md:mt-0 hover:text-teal-300">Home</Link>
+                            <Link  onClick={() => setIsOpen(!isOpen)} to="/projects" className="p-4 mt-4 md:p-0 md:mr-14 md:inline-block md:mt-0 hover:text-teal-300">Projects</Link>
             
-                            <Link  onClick={() => setIsOpen(!isOpen)} to="/about" className="p-4 text-2xl text-white mt-4 md:p-0 md:mr-14 md:inline-block md:mt-0 md:text-lg hover:text-[#FFDA76]">About</Link>
+                            <Link  onClick={() => setIsOpen(!isOpen)} to="/about" className="p-4 mt-4 md:p-0 md:mr-14 md:inline-block md:mt-0 hover:text-teal-300">About</Link>
                             
-                            <Link  onClick={() => setIsOpen(!isOpen)} to="/contact" className="p-4 text-2xl text-white mt-4 md:p-0 md:mr-14 md:inline-block md:mt-0 md:text-lg hover:text-[#FFDA76]" >Contact</Link>   
-                        {/* </div>  */}
-                        <Link className="mt-4 transition-all duration-500 bg-[#FFDA76] hover:bg-zinc-700 hover:text-white py-2 px-4 rounded  text-black uppercase" to="https://drive.google.com/file/d/1DDggWU8Z3p7r14uccc3AU8V0LC_uLOlW/view" target="_blank">Resume</Link>
+                            <Link  onClick={() => setIsOpen(!isOpen)} to="/contact" className="p-4 mt-4 md:p-0 md:mr-14 md:inline-block md:mt-0 hover:text-teal-300" >Contact</Link>   
+                     
+                        <Link className="mt-4 transition-all duration-500 bg-teal-300 text-teal-900 text-[1rem] font-semibold hover:bg-zinc-700 hover:text-white py-2 px-4 rounded uppercase" to="https://drive.google.com/file/d/1DDggWU8Z3p7r14uccc3AU8V0LC_uLOlW/view" target="_blank">Resume</Link>
                     </div> 
-                    {/* <div>
-                    <Link className="transition-all duration-500 bg-[#FFDA76] hover:bg-zinc-700 hover:text-white py-2 px-4 rounded  text-black uppercase" to="https://drive.google.com/file/d/1DDggWU8Z3p7r14uccc3AU8V0LC_uLOlW/view" target="_blank">Resume</Link>
-                    </div> */}
             </div>
         </nav>
         </>

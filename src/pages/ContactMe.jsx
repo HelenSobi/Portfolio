@@ -6,7 +6,7 @@ const ContactMe = () => {
     return (
         <>
         <HeroImage heading="Let's catch up." subHead="Feel free to contact."/>
-        <section className="bg-black">
+        <section className="">
             <div className="md:w-6/12 w-full mx-auto">  
                <Form/>
             

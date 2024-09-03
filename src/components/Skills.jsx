@@ -1,33 +1,20 @@
+import { Link } from 'react-router-dom';
+import HomeSkills from './HomeSkills'
+
 const Skills = () =>{
     return (
         <>
-        <div className="py-4 max-md:px-4">
-        <h1 className="text-2xl md:text-4xl font-bold text-white">Skills & Proficiencies</h1>
-        <h3>Technical Skills</h3>
-        <ul>
-            <li className="inline-block text-white border border-neutral-400 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-4 mb-4 md:mb-6">HTML 5</li>
-            <li className="inline-block text-white border border-neutral-400 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-4 mb-4 md:mb-6">CSS</li>
-            <li className="inline-block text-white border border-neutral-400 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-4 mb-4 md:mb-6">Javascript</li>
-            <li className="inline-block text-white border border-neutral-400 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-4 mb-4 md:mb-6">Tailwind CSS</li>
-            <li className="inline-block text-white border border-neutral-400 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-4 mb-4 md:mb-6">Bootstrap</li>
-            <li className="inline-block text-white border border-neutral-400 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-4 mb-4 md:mb-6">ES6</li>
-            <li className="inline-block text-white border border-neutral-400 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-4 mb-4 md:mb-6">Media Query</li>
-            <li className="inline-block text-white border border-neutral-400 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-4 mb-4 md:mb-6">Figma</li>
-            <li className="inline-block text-white border border-neutral-400 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-4 mb-4 md:mb-6">Canva</li>
-            <li className="inline-block text-white border border-neutral-400 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-4 mb-4 md:mb-6">Git</li>
-            <li className="inline-block text-white border border-neutral-400 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-4 mb-4 md:mb-6">Responsive Web Design</li>
-            <li className="inline-block text-white border border-neutral-400 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-4 mb-4 md:mb-6">MS Office</li>
-            <li className="inline-block text-white border border-neutral-400 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-4 mb-4 md:mb-6">Adobe Photoshop</li>
-            <li className="inline-block text-white border border-neutral-400 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-4 mb-4 md:mb-6">Adobe Illustrator</li>
-        </ul>
+        <div className="max-md:px-4">
+        <h1 className="text-2xl font-bold text-teal-300 py-4">Skills & Proficiencies</h1>
+        <HomeSkills/>
         </div>
-        <div className="py-4 max-md:px-4">
-        <h1 className="text-2xl md:text-4xl font-bold text-white">Social Handles</h1>
-        <h3>Technical Skills</h3>
-        <ul>
-            <li className="inline-block text-white border border-neutral-400 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-4 mb-4 md:mb-6">Linkedin</li>
-            <li className="inline-block text-white border border-neutral-400 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-4 mb-4 md:mb-6">Github</li>
-            
+        <div className="max-md:px-4">
+        <h1 className="text-2xl font-bold text-teal-300 py-4">Social Handles</h1>
+        <ul className="text-white font-medium text-sm ">
+        <li className="inline-block border border-neutral-400 bg-slate-700 rounded-lg px-5 py-2.5 me-4 mb-4 md:mb-6">
+        <Link to="https://www.linkedin.com/in/helen-sobia" target="_blank">Linkedin</Link></li>
+        <li className="inline-block border border-neutral-400 bg-slate-700 rounded-lg px-5 py-2.5 me-4 mb-4 md:mb-6">
+        <Link to="https://github.com/HelenSobi" target="_blank">Github</Link></li> 
         </ul>
         </div>
         </>

@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter,RouterProvider} from 'react-router-dom';
+import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
-import './index.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import ContactMe from './pages/ContactMe';
 import Projects from './pages/Projects';
 import Nopage from './pages/Nopage';
+import './index.css';
+import './assets/custom.css';
 
 const router = createBrowserRouter([
   {
@@ -43,20 +44,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>,
 )
 
-{/* 
-  import React,{lazy, Suspense} from 'react';
-  const Home = lazy(() => import('./pages/Home'));
-const About = lazy(() => import('./pages/About'));
-const Projects = lazy(() => import('./pages/Projects'));
-const ContactMe = lazy(() => import('./pages/ContactMe'));
-const Nopage = lazy(() => import('./pages/Nopage'));
-  
-  <Suspense fallback={<div className="container">Loading...</div>}>
-<Routes>
-  <Route path="/" element={<Home/>}/>
-  <Route path="/about" element={<About/>}/>
-  <Route path="/projects" element={<Projects/>}/>
-  <Route path="/contact" element={<ContactMe/>}/>
-  <Route path="*" element={<Nopage/>}/>
-</Routes>
-</Suspense> */}
