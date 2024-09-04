@@ -55,8 +55,8 @@ const NavBar = () =>{
                             <Link  onClick={() => setIsOpen(!isOpen)} to="/about" className="p-4 mt-4 md:p-0 md:mr-14 md:inline-block md:mt-0 hover:text-teal-300">About</Link>
                             
                             <Link  onClick={() => setIsOpen(!isOpen)} to="/contact" className="p-4 mt-4 md:p-0 md:mr-14 md:inline-block md:mt-0 hover:text-teal-300" >Contact</Link>   
-                     
-                        <Link className="mt-4 transition-all duration-500 bg-teal-300 text-teal-900 text-[1rem] font-semibold hover:bg-zinc-700 hover:text-white py-2 px-4 rounded uppercase" to="https://drive.google.com/file/d/1DDggWU8Z3p7r14uccc3AU8V0LC_uLOlW/view" target="_blank">Resume</Link>
+                      <Link className="mt-4 transition-all duration-500 bg-teal-300 text-teal-900 text-[1rem] font-semibold hover:bg-zinc-700 hover:text-white py-2 px-4 rounded uppercase" to="https://drive.google.com/file/d/1IqwDy0aY9JN2zKGQQpNI_wnxe9snEm3g/view" target="_blank">
+                       Resume</Link>
                     </div> 
             </div>
         </nav>
